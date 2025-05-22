@@ -189,16 +189,16 @@ CREATE TABLE nabava (
 );
 
 INSERT INTO nabava (dobavljac, proizvod_id, kolicina, datum_nabave) VALUES
-('Farmerova Farma', 1, 50.00, '2025-05-10 08:00:00'),
-('Zeleni Bregovi', 5, 30.50, '2025-05-11 09:30:00'),
-('Plodovi Doline', 10, 20.00, '2025-05-12 10:15:00'),
-('Eko Farma Sunce', 15, 100.00, '2025-05-12 12:00:00'),
-('Stara Livada', 20, 75.00, '2025-05-13 14:45:00'),
-('Farma Vrh', 25, 40.00, '2025-05-14 11:00:00'),
-('Dolina Mirisa', 30, 60.00, '2025-05-14 15:30:00'),
-('Lovačka Farma', 35, 25.00, '2025-05-15 13:00:00'),
-('Bistra Voda', 40, 80.00, '2025-05-16 09:00:00'),
-('Zlatni Polje', 45, 55.00, '2025-05-17 16:20:00');
+('Farmerova Farma', 1, 50.00, '2025-05-01 08:00:00'),
+('Zeleni Bregovi', 5, 30.50, '2025-05-01 09:30:00'),
+('Plodovi Doline', 10, 20.00, '2025-05-02 10:15:00'),
+('Eko Farma Sunce', 15, 100.00, '2025-05-02 12:00:00'),
+('Stara Livada', 20, 75.00, '2025-05-03 14:45:00'),
+('Farma Vrh', 25, 40.00, '2025-05-14 04:00:00'),
+('Dolina Mirisa', 30, 60.00, '2025-05-04 15:30:00'),
+('Lovačka Farma', 35, 25.00, '2025-05-05 13:00:00'),
+('Bistra Voda', 40, 80.00, '2025-05-05 09:00:00'),
+('Zlatni Polje', 45, 55.00, '2025-05-06 16:20:00');
 
 CREATE TABLE narudzba (
     id INT PRIMARY KEY AUTO_INCREMENT,
