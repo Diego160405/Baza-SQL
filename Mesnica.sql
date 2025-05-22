@@ -289,34 +289,34 @@ CREATE TABLE transakcija (
 
 INSERT INTO transakcija (kupac_id, zaposlenik_id, proizvod_id, kolicina, ukupna_cijena, datum) VALUES
 -- 1. Ivan Horvat - Marko Vidović
-(1, 1, 1, 1.00, 13.80, '2024-05-01 09:30:00'),
+(1, 1, 1, 1.00, 13.80, '2025-05-01 10:30:00'),
 
 -- 2. Ana Kovač - Ivan Benković
-(2, 2, 15, 2.00, 18.60, '2024-05-02 10:00:00'),
+(2, 2, 15, 2.00, 18.60, '2025-05-01 13:00:00'),
 
 -- 3. Ivan Šimić - Mark Šestan 
-(3, 5, 5, 2.00, 84.94, '2024-05-03 11:00:00'),
+(3, 5, 5, 2.00, 84.94, '2025-05-02 11:00:00'),
 
 -- 4. Maja Novak - Petar Krešić
-(4, 3, 10, 1.50, 20.85, '2024-05-04 14:30:00'),
+(4, 3, 10, 1.50, 20.85, '2025-05-02 14:30:00'),
 
 -- 5. Luka Perić - Luka Dolenec
-(5, 4, 20, 2.00, 24.00, '2024-05-05 16:45:00'),
+(5, 4, 20, 2.00, 24.00, '2025-05-03 16:45:00'),
 
 -- 6. Ivana Radić - Josip Grgić
-(6, 6, 27, 1.20, 9.00, '2024-05-06 13:20:00'),
+(6, 6, 27, 1.20, 9.00, '2025-05-04 17:20:00'),
 
 -- 7. Petar Kralj - Davor Ledić
-(7, 7, 34, 2.00, 25.00, '2024-05-07 08:10:00'),
+(7, 7, 34, 2.00, 25.00, '2025-05-05 18:10:00'),
 
 -- 8. Jelena Šarić - Nikola Čolak
-(8, 8, 12, 1.00, 18.60, '2024-05-08 17:50:00'),
+(8, 8, 12, 1.00, 18.60, '2025-05-05 17:50:00'),
 
 -- 9. Tomislav Matić - Mario Šimunović
-(9, 9, 23, 3.00, 9.93, '2024-05-09 12:05:00'),
+(9, 9, 23, 3.00, 9.93, '2025-05-06 12:05:00'),
 
 -- 10. Sara Jurić - Andrija Zvijer
-(10, 10, 40, 1.50, 13.05, '2024-05-10 15:15:00');
+(10, 10, 40, 1.50, 13.05, '2025-05-06 16:15:00');
 
 CREATE TABLE recenzija (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -331,19 +331,19 @@ CREATE TABLE recenzija (
 
 INSERT INTO recenzija (kupac_id, proizvod_id, ocjena, komentar, datum) VALUES
 -- Ivan Horvat
-(1, 1, 4, 'Meso je bilo jako dobro, ali bi volio da je pakiranje čvršće.', '2024-11-03 14:23:00'),
+(1, 1, 4, 'Meso je bilo jako dobro, ali bi volio da je pakiranje čvršće.', '2025-05-01 20:23:00'),
 
 -- Ana Kovač
-(2, 10, 2, 'Teletina je bila žilava i nije svježa kao inače.', '2024-11-04 10:45:00'),
+(2, 10, 2, 'Teletina je bila žilava i nije svježa kao inače.', '2025-05-02 18:45:00'),
 
 -- Ivan Šimić 
-(3, 5, 5, 'Savršeno meso! Prodavač je bio ljubazan i sve objasnio. Vraćam se sigurno!', '2024-11-05 16:12:00'),
+(3, 5, 5, 'Savršeno meso! Prodavač je bio ljubazan i sve objasnio. Vraćam se sigurno!', '2024-05-05 19:12:00'),
 
 -- Maja Novak
-(4, 18, 3, 'Svinjski but je bio dobar, ali ne vrijedi cijene.', '2024-11-06 12:30:00'),
+(4, 18, 3, 'Svinjski but je bio dobar, ali ne vrijedi cijene.', '2025-05-05 20:30:00'),
 
 -- Luka Perić
-(5, 27, 5, 'Ćevapčići su bili izvrsni za roštilj! Djeca oduševljena.', '2024-11-06 19:55:00');
+(5, 27, 5, 'Ćevapčići su bili izvrsni za roštilj! Djeca oduševljena.', '2025-05-03 19:55:00');
 
 ALTER TABLE proizvod
 ADD CONSTRAINT chk_cijena_po_kg CHECK (cijena_po_kg >= 0),
