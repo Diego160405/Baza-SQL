@@ -1,4 +1,4 @@
-DROP DATABASE MESNICA;
+DROP DATABASE mesnica;
 CREATE DATABASE mesnica;
 USE mesnica;
 
